@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+instance/
+
+# Flask / Banco de dados
+*.sqlite3
+*.db
+
+# IDEs
+.vscode/
+.idea/
+
+# Sistema
+.DS_Store
