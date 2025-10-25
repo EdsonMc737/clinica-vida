@@ -1,0 +1,17 @@
+@import url(../css/stilos//reset.css);
+@import url(../css/stilos/nav.css);
+@import url(../css/stilos/bootstrap.css);
+@import url(../css/stilos/login.css);
+@import url(../css/stilos/index.css);
+@import url(../css/stilos/footer.css);
+@import url(../css/stilos/contato.css);
+@import url(../css/stilos/sobre.css);
+@import url(../css/stilos/servico.css);
+@import url(../css/stilos/home.css);
+:root{
+    --font-body:'Poppins', sans-serif;
+    --color-principal:#333;
+    --cor-branco:#f5f7fb;
+    --cora-zul:#1976d2;
+    --white:white;
+}

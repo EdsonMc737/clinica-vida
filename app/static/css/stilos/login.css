@@ -1,0 +1,172 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Container principal dividido */
+.login-page {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Lado esquerdo: apresentação */
+.hero {
+  flex: 2.2; /* maior destaque para apresentação */
+  position: relative;
+  background: linear-gradient(rgba(25,118,210,0.6), rgba(63,81,181,0.6)),
+              url('https://images.unsplash.com/photo-1588776814546-245a6df87f68?auto=format&fit=crop&w=1470&q=80') no-repeat center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 40px;
+}
+
+/* Overlay semitransparente */
+.hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(25, 118, 210, 0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 400px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+/* Lado direito: login */
+.login-container {
+  flex: 0.9; /* menor lado de login */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 40px;
+  box-shadow: -5px 0 25px rgba(0,0,0,0.15);
+  max-width: 400px;
+  min-width: 320px;
+  border-radius: 12px 0 0 12px;
+  transition: all 0.3s ease;
+}
+
+/* Ícone e título */
+.icon {
+  font-size: 3rem;
+  color: #1976d2;
+  margin-bottom: 12px;
+}
+
+.login-container h2 {
+  margin-bottom: 25px;
+  color: #1976d2;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+/* Inputs */
+.input-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #1976d2;
+  box-shadow: 0 0 8px rgba(25,118,210,0.4);
+  transform: scale(1.02);
+}
+
+/* Botão com animação */
+.btn-login {
+  width: 100%;
+  background-color: #1976d2;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-login:hover {
+  background-color: #125ea7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+/* Texto e link */
+.login-container p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #555;
+  text-align: center;
+}
+
+.login-container a {
+  color: #1976d2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-container a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media(max-width: 900px){
+  .login-page {
+    flex-direction: column;
+  }
+
+  .hero, .login-container {
+    flex: unset;
+    width: 100%;
+    min-height: 50vh;
+    border-radius: 0;
+  }
+
+  .login-container {
+    box-shadow: none;
+    padding: 40px 20px;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,40 @@
+{% extends "template/base.html"%}
+{% block content%}
+<div class="login-page">
+    <div class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>Bem-vindo à Clínica Vida+</h1>
+            <p>Atendimento humanizado e moderno para você e sua família.</p>
+        </div>
+    </div>
+
+    <div class="login-container">
+        <i class="bi bi-hospital icon"></i>
+        <h2>Login</h2>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, msg in messages %}
+                <div class="flash {{ category }}">{{ msg }}</div>
+            {% endfor %}
+        {% endif %}
+        {% endwith %}
+
+        <form method="POST">
+            <div class="input-group">
+                <label for="email">Usuário ou E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Digite seu usuário">
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+            </div>
+
+            <button type="submit" class="btn-login">Entrar</button>
+            <p><a href="#">Esqueceu a senha?</a></p>
+        </form>
+    </div>
+</div>
+{% endblock %}

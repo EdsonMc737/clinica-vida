@@ -1,0 +1,49 @@
+{% extends "template/base.html" %}
+{% block title %}Contato - Clínica Vida+{% endblock %}
+
+{% block content %}
+<div class="contact-page">
+  <div class="contact-info">
+    <h2>Fale Conosco</h2>
+    <p>Estamos disponíveis para esclarecer suas dúvidas e agendar atendimentos.</p>
+    <div class="info-item">
+      <i class="bi bi-telephone"></i>
+      <span>(11) 99999-9999</span>
+    </div>
+    <div class="info-item">
+      <i class="bi bi-envelope"></i>
+      <span>contato@clinicavida.com</span>
+    </div>
+    <div class="info-item">
+      <i class="bi bi-geo-alt"></i>
+      <span>Rua Exemplo, 123, São Paulo - SP</span>
+    </div>
+    <div class="social-icons">
+      <a href="#" title="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+      <a href="#" title="Telegram"><i class="bi bi-telegram"></i></a>
+      <a href="#" title="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" title="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" title="X (Twitter)"><i class="bi bi-x"></i></a>
+    </div>
+  </div>
+
+  <div class="contact-form">
+    <h2>Envie uma Mensagem</h2>
+    <form action="#" method="POST">
+      <div class="input-group">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+      </div>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Seu email" required>
+      </div>
+      <div class="input-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn-send">Enviar</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

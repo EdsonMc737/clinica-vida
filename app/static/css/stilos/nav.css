@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: #f5f7fb;
+}
+
+nav {
+    background-color: #1976d2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.menu a:hover {
+    color: #bbdefb;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+}
+
+.user i {
+    font-size: 1.4rem;
+}
+/*2º nav menu */
+.public-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #1976d2;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.public-nav .logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.public-nav .menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.public-nav .menu li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.public-nav .menu li a:hover {
+    color: #bbdefb;
+}
+
+.btn-login-nav {
+    padding: 8px 20px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-login-nav:hover {
+    background-color: #e68a00;
+}
